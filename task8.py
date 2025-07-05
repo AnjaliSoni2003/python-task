@@ -1,0 +1,24 @@
+user_input = input("Enter text to write to the file: ")  
+
+file1 = open('sample.txt', 'w') 
+file1.write(user_input)          
+file1.close()
+
+print("Data written successfully.")
+
+user_input = input("Enter Addition text to append: ")  
+
+file1 = open('sample.txt', 'a') 
+file1.write(user_input)          
+file1.close()
+
+print("Data Append successfully.")
+
+print("\nFinal content of output.txt:") 
+
+file1 = open('sample.txt', 'r') 
+reading_file=file1.read()
+print(reading_file)        
+file1.close()
+
+print("Learning file handling in python")
