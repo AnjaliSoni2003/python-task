@@ -1,0 +1,20 @@
+#Assignment 3
+#task 1
+def factorial(n):
+    if n==1:
+        return 1
+    else:
+        return n*(factorial(n-1))
+num=int(input("Enter a num:"))
+result=factorial(num)   
+print(result)
+ #task 2
+from math import *
+num=float(input("ENter a num:"))
+sqrt_val = sqrt(num)               
+log_val = log(num)                 
+sine_val = sin(num)               
+
+print("Square root:", sqrt_val)
+print("Natural Logarithm:", log_val)
+print("Sine (in radians):", sine_val)
